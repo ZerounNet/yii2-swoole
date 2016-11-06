@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "yii2swoole\\": ""
+            "zerounnet\\yii2swoole\\": ""
         }
     }
 }
