@@ -1,0 +1,21 @@
+{
+    "name": "zerounnet/yii2-swoole",
+    "description": "yii2swoole",
+    "type": "library",
+    "keywords": ["yii2","swoole"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "ZerounNet",
+            "email": "anthony@ZerounNet.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "yii2swoole\\": ""
+        }
+    }
+}
