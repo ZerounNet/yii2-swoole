@@ -28,4 +28,4 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \zerounnet\yii2swoole\AutoloadExample::widget(); ?>```
+<?= \yii2swoole\AutoloadExample::widget(); ?>```

@@ -1,7 +1,7 @@
 {
     "name": "zerounnet/yii2-swoole",
     "description": "yii2swoole",
-    "type": "library",
+    "type": "yii2-extension",
     "keywords": ["yii2","swoole"],
     "license": "Apache-2.0",
     "authors": [
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "zerounnet\\yii2swoole\\": ""
+            "yii2swoole\\": ""
         }
     }
 }
