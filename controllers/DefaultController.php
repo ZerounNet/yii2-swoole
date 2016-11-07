@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2swoole\controllers;
+namespace zerounnet\swoole\controllers;
 
 use yii\web\Controller;
 

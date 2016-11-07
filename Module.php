@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2swoole;
+namespace zerounnet\swoole;
 
 /**
  * yii2swoole module definition class
@@ -10,7 +10,7 @@ class Module extends \yii\base\Module
     /**
      * @inheritdoc
      */
-    public $controllerNamespace = 'yii2swoole\controllers';
+    public $controllerNamespace = 'zerounnet\swoole\controllers';
 
     /**
      * @inheritdoc

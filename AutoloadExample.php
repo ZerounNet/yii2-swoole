@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2swoole;
+namespace zerounnet\swoole;
 
 /**
  * This is just an example.
