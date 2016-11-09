@@ -3,7 +3,7 @@
 namespace zerounnet\swoole;
 
 /**
- * yii2swoole module definition class
+ * swoole module definition class
  */
 class Module extends \yii\base\Module
 {
