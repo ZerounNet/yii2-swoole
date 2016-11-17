@@ -21,6 +21,7 @@ class Response extends \yii\web\Response {
 		$this->sendCookies ();
 	}
 	protected function sendCookies() {
+		\Yii::$app->getSession()->close();
 		$cookies = $this->getCookies ();
 		if ($cookies === null) {
 			return;

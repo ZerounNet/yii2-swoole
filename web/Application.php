@@ -19,4 +19,16 @@ class Application extends \yii\web\Application {
 				] 
 		] );
 	}
+	
+	/**
+	 * Runs the application.
+	 * This is the main entrance of an application.
+	 *
+	 * @return integer the exit status (0 means normal, non-zero values mean abnormal)
+	 */
+	public function run() {
+		$ret = parent::run ();
+		\Yii::getLogger ()->flush ();
+		return $ret;
+	}
 }
