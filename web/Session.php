@@ -7,8 +7,8 @@ class Session extends \yii\web\Session {
 		if ($this->getIsActive () && $this->getUseCookies () === true && $this->getHasSessionId () === false) {
 			$data = $this->getCookieParams ();
 			extract ( $data );
+			$cookies = \Yii::$app->getResponse ()->cookies;
 			if (isset ( $lifetime, $path, $domain, $secure, $httponly )) {
-				$cookies = \Yii::$app->getResponse ()->cookies;
 				$cookies->add ( new \yii\web\Cookie ( [ 
 						'name' => $this->getName (),
 						'value' => $this->getId (),
@@ -19,7 +19,6 @@ class Session extends \yii\web\Session {
 						'httpOnly' => $httponly 
 				] ) );
 			} else {
-				$cookies = \Yii::$app->getResponse ()->cookies;
 				$cookies->add ( new \yii\web\Cookie ( [ 
 						'name' => $this->getName (),
 						'value' => $this->getId () 

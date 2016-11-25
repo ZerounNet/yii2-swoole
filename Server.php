@@ -15,7 +15,7 @@ class Server extends \yii\base\Component {
 		return $this->server;
 	}
 	public function init() {
-		$this->server = new swoole_server ( '0.0.0.0', 9501 );
+		$this->server = new \Swoole\server ( '0.0.0.0', 9501 );
 	}
 	protected function handle() {
 		return [ 

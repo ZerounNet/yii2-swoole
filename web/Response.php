@@ -7,6 +7,9 @@ class Response extends \yii\web\Response {
 	public function setSwoole($response) {
 		$this->swoole = $response;
 	}
+	public function getSwoole() {
+		return $this->swoole;
+	}
 	protected function sendHeaders() {
 		if ($this->isSent) {
 			return;
@@ -21,7 +24,7 @@ class Response extends \yii\web\Response {
 		$this->sendCookies ();
 	}
 	protected function sendCookies() {
-		\Yii::$app->getSession()->close();
+		\Yii::$app->getSession ()->close ();
 		$cookies = $this->getCookies ();
 		if ($cookies === null) {
 			return;

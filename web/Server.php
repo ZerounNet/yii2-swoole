@@ -38,5 +38,8 @@ class Server extends \zerounnet\swoole\Server {
 		$application->getRequest ()->setSwoole ( $request );
 		$application->getResponse ()->setSwoole ( $response );
 		$application->run ();
+		
+		\Yii::getLogger ()->flush ();
+		\Yii::getLogger ()->flush ( true );
 	}
 }
